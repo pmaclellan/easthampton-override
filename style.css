@@ -1,11 +1,11 @@
 /* ===== CUSTOM PROPERTIES ===== */
 :root {
-  --color-green-forest: #1f3a5f;  /* oxford navy  */
-  --color-green-mid:    #2a4d7a;  /* mid navy     */
-  --color-amber:        #d96c3d;  /* spicy paprika */
-  --color-gold:         #f2b544;  /* sunflower gold */
-  --color-cream:        #f7f3ec;  /* parchment    */
-  --color-text-dark:    #2b2b2b;  /* graphite     */
+  --color-green-forest: #1B5E20;
+  --color-green-mid:    #2E7D32;
+  --color-amber:        #F57C00;
+  --color-gold:         #FFD600;
+  --color-cream:        #F5F0D5;
+  --color-text-dark:    #1A3A1A;
   --color-white:        #FFFFFF;
   --color-red-deep:     #B71C1C;
 
@@ -309,7 +309,7 @@ body {
   border-radius: var(--radius);
   padding: 1.5rem 2rem;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(31,58,95,0.1);
+  box-shadow: 0 2px 12px rgba(27,94,32,0.1);
   min-width: 200px;
   flex: 1;
   max-width: 300px;
@@ -454,7 +454,7 @@ body {
 
 .cut-card {
   background: var(--color-cream);
-  border: 1px solid rgba(31,58,95,0.15);
+  border: 1px solid rgba(27,94,32,0.15);
   border-radius: var(--radius);
   padding: 1.25rem 1.375rem;
 }
@@ -492,7 +492,7 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
   text-align: center;
-  background: rgba(217,108,61,0.15);
+  background: rgba(245,124,0,0.15);
   border: 2px solid var(--color-amber);
   border-radius: var(--radius);
   padding: 1.25rem 2rem;
@@ -502,7 +502,7 @@ body {
 
 .cut-card__detail-btn {
   background: none;
-  border: 1px solid rgba(31,58,95,0.3);
+  border: 1px solid rgba(27,94,32,0.3);
   color: var(--color-green-forest);
   font-size: 0.78rem;
   font-family: inherit;
@@ -514,7 +514,7 @@ body {
   transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
 .cut-card__detail-btn:hover {
-  background: rgba(31,58,95,0.06);
+  background: rgba(27,94,32,0.06);
   border-color: var(--color-green-forest);
   color: var(--color-green-forest);
 }
@@ -556,7 +556,7 @@ body {
 .dept-modal__close {
   background: none;
   border: none;
-  color: rgba(247,243,236,0.7);
+  color: rgba(245,240,213,0.7);
   font-size: 1.1rem;
   cursor: pointer;
   padding: 0.25rem 0.5rem;
@@ -571,7 +571,7 @@ body {
 }
 .dept-modal__byline {
   background: var(--color-green-forest);
-  color: rgba(247,243,236,0.6);
+  color: rgba(245,240,213,0.6);
   font-size: 0.77rem;
   font-style: italic;
   padding: 0 1.5rem 1rem;
@@ -606,9 +606,9 @@ body {
 .dept-modal__footer {
   padding: 0.75rem 1.5rem;
   background: var(--color-cream);
-  border-top: 1px solid rgba(31,58,95,0.12);
+  border-top: 1px solid rgba(27,94,32,0.12);
   font-size: 0.77rem;
-  color: rgba(43,43,43,0.65);
+  color: rgba(26,58,26,0.65);
   flex-shrink: 0;
 }
 .dept-modal__footer a {
@@ -686,7 +686,7 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.07);
   white-space: nowrap;
 }
-.tax-table tbody tr:hover { background: rgba(31,58,95,0.04); }
+.tax-table tbody tr:hover { background: rgba(27,94,32,0.04); }
 
 .tax-table__highlight          { background: #FFF9C4 !important; font-weight: 700; }
 .tax-table__highlight:hover    { background: #FFF59D !important; }
@@ -718,7 +718,7 @@ body {
 #why {
   background: var(--color-white);
   padding: var(--space-lg) 0;
-  border-top: 1px solid rgba(31,58,95,0.1);
+  border-top: 1px solid rgba(27,94,32,0.1);
 }
 
 .why-content {
@@ -775,7 +775,7 @@ body {
 #faq {
   background: var(--color-cream);
   padding: var(--space-lg) 0;
-  border-top: 1px solid rgba(31,58,95,0.1);
+  border-top: 1px solid rgba(27,94,32,0.1);
 }
 
 .faq-disclaimer {
