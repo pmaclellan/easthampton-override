@@ -778,6 +778,14 @@ body {
   border-top: 1px solid rgba(31,58,95,0.1);
 }
 
+.faq-disclaimer {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--color-amber);
+  margin-top: 0.75rem;
+}
+
 .faq-list {
   max-width: 800px;
   margin: var(--space-md) auto 0;
