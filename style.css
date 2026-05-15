@@ -948,3 +948,86 @@ footer {
   line-height: 1.6;
 }
 .footer-disclaimer p + p { margin-top: 0.4rem; }
+
+
+/* ===== ADD TO CALENDAR ===== */
+.cal-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.cal-dropdown > summary {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  border: 1.5px solid var(--color-green-mid);
+  color: var(--color-green-mid);
+  background: transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.cal-dropdown > summary::-webkit-details-marker,
+.cal-dropdown > summary::marker {
+  display: none;
+}
+
+.cal-dropdown > summary:hover,
+.cal-dropdown[open] > summary {
+  background: var(--color-green-mid);
+  color: var(--color-white);
+}
+
+/* On the dark primary card (June 9) */
+.date-card--primary .cal-dropdown > summary {
+  border-color: rgba(245, 240, 213, 0.55);
+  color: var(--color-cream);
+}
+.date-card--primary .cal-dropdown > summary:hover,
+.date-card--primary .cal-dropdown[open] > summary {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-cream);
+}
+
+.cal-dropdown__options {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 190px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 200;
+}
+
+.cal-dropdown__option {
+  display: block;
+  padding: 0.65rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  transition: background 0.1s;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.cal-dropdown__option:hover {
+  background: var(--color-cream);
+}
+
+.cal-dropdown__option + .cal-dropdown__option {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}

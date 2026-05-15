@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vote Yes for Easthampton//EN
+BEGIN:VEVENT
+UID:vote-june9-2026@yesforeasthampton.org
+DTSTAMP:20260515T000000Z
+DTSTART;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260610
+SUMMARY:Vote YES — Easthampton Override Election Day
+DESCRIPTION:Polls open 7:00 AM–8:00 PM.\nEasthampton High School\, 70 Williston Avenue\, Easthampton.\nVote YES on the Prop 2.5 override to protect schools\, public safety\, and city services.\nMore info: https://yesforeasthampton.org
+LOCATION:Easthampton High School\, 70 Williston Avenue\, Easthampton\, MA
+URL:https://yesforeasthampton.org
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

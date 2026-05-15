@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vote Yes for Easthampton//EN
+BEGIN:VEVENT
+UID:absentee-june2-2026@yesforeasthampton.org
+DTSTAMP:20260515T000000Z
+DTSTART;VALUE=DATE:20260602
+DTEND;VALUE=DATE:20260603
+SUMMARY:Absentee Ballot Request Deadline — Vote Yes for Easthampton
+DESCRIPTION:Last day to request a mail-in absentee ballot (5:00 PM deadline).\nApply online at: https://www.sec.state.ma.us/ele/eleabsentee/absenteeabout.htm\nIn-person absentee voting ends at noon on June 8.\nMore info: https://yesforeasthampton.org
+URL:https://yesforeasthampton.org
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
