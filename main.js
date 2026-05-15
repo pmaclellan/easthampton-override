@@ -70,6 +70,18 @@
     });
   });
 
+  // === DEPARTMENT DETAIL MODALS ===
+  document.querySelectorAll('.cut-card__detail-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const modal = document.getElementById(btn.dataset.modal);
+      if (modal) modal.showModal();
+    });
+  });
+  document.querySelectorAll('.dept-modal').forEach(modal => {
+    modal.querySelector('.dept-modal__close')?.addEventListener('click', () => modal.close());
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
+  });
+
   // === COPY LINK BUTTON ===
   const copyBtn = document.querySelector('.btn-copy-link');
   if (copyBtn) {
