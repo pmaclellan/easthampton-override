@@ -492,13 +492,13 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
   text-align: center;
-  background: rgba(245,124,0,0.15);
-  border: 2px solid var(--color-amber);
+  background: rgba(255,214,0,0.1);
+  border: 2px solid var(--color-gold);
   border-radius: var(--radius);
   padding: 1.25rem 2rem;
 }
 .cuts-total__label  { color: var(--color-cream); font-size: 1.05rem; font-weight: 600; }
-.cuts-total__amount { color: var(--color-amber); font-size: 2rem; font-weight: 900; }
+.cuts-total__amount { color: var(--color-gold); font-size: 2rem; font-weight: 900; }
 
 .cut-card__detail-btn {
   background: none;
