@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vote Yes for Easthampton//EN
+BEGIN:VEVENT
+UID:register-may30-2026@yesforeasthampton.org
+DTSTAMP:20260515T000000Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260531
+SUMMARY:Voter Registration Deadline — Vote Yes for Easthampton
+DESCRIPTION:Register to vote today!\nIn-person: 9:00 AM–5:00 PM at City Clerk's Office\, 50 Payson Ave\, Easthampton.\nOr register online at: https://www.sec.state.ma.us/ovr\nMore info: https://yesforeasthampton.org
+LOCATION:City Clerk's Office\, 50 Payson Ave\, Easthampton\, MA
+URL:https://yesforeasthampton.org
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
