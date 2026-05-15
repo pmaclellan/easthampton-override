@@ -453,15 +453,15 @@ body {
 }
 
 .cut-card {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.14);
+  background: var(--color-cream);
+  border: 1px solid rgba(31,58,95,0.15);
   border-radius: var(--radius);
   padding: 1.25rem 1.375rem;
 }
 .cut-card__dept {
   font-weight: 700;
   font-size: 0.8rem;
-  color: var(--color-cream);
+  color: var(--color-green-forest);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   margin-bottom: 0.5rem;
@@ -479,7 +479,7 @@ body {
 }
 .cut-card__list li {
   font-size: 0.875rem;
-  color: rgba(247,243,236,0.82);
+  color: var(--color-text-dark);
   padding: 0.2rem 0;
   line-height: 1.4;
 }
@@ -502,8 +502,8 @@ body {
 
 .cut-card__detail-btn {
   background: none;
-  border: 1px solid rgba(255,255,255,0.28);
-  color: rgba(247,243,236,0.75);
+  border: 1px solid rgba(31,58,95,0.3);
+  color: var(--color-green-forest);
   font-size: 0.78rem;
   font-family: inherit;
   padding: 0.35rem 0.7rem;
@@ -514,9 +514,9 @@ body {
   transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
 .cut-card__detail-btn:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.55);
-  color: var(--color-cream);
+  background: rgba(31,58,95,0.06);
+  border-color: var(--color-green-forest);
+  color: var(--color-green-forest);
 }
 
 /* ===== DEPARTMENT DETAIL MODALS ===== */
