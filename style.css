@@ -802,8 +802,10 @@ body {
 .faq-item {
   background: var(--color-white);
   border-radius: var(--radius);
-  overflow: hidden;
   box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  /* Note: overflow is intentionally not hidden here so .cal-dropdown panels
+     can escape the card boundary. Any child with its own background color
+     needs its own border-radius on the relevant corners. */
 }
 
 .faq-question {
@@ -819,11 +821,13 @@ body {
   color: var(--color-text-dark);
   background: var(--color-white);
   transition: background 0.15s;
+  border-radius: var(--radius);
 }
 .faq-question:hover { background: #f7f7f7; }
 .faq-question[aria-expanded="true"] {
   background: var(--color-green-forest);
   color: var(--color-cream);
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 .faq-question[aria-expanded="true"] .faq-icon { color: var(--color-gold); }
 
@@ -953,8 +957,9 @@ footer {
 /* ===== ADD TO CALENDAR ===== */
 .cal-dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .cal-dropdown > summary {
