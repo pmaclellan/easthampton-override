@@ -529,6 +529,7 @@ body {
   overflow: hidden;
   box-shadow: 0 24px 64px rgba(0,0,0,0.45);
   margin: auto;
+  background: var(--color-cream);
 }
 .dept-modal::backdrop {
   background: rgba(0,0,0,0.6);
@@ -583,7 +584,11 @@ body {
   flex: 1;
   background: var(--color-cream);
   color: var(--color-text-dark);
+  scrollbar-color: rgba(27,94,32,0.25) var(--color-cream);
 }
+.dept-modal__body::-webkit-scrollbar { width: 8px; background: var(--color-cream); }
+.dept-modal__body::-webkit-scrollbar-thumb { background: rgba(27,94,32,0.25); border-radius: 4px; }
+.dept-modal__body::-webkit-scrollbar-thumb:hover { background: rgba(27,94,32,0.45); }
 .dept-modal__body p {
   margin-bottom: 0.875rem;
   line-height: 1.6;
