@@ -70,8 +70,8 @@
     });
   });
 
-  // === DEPARTMENT DETAIL MODALS ===
-  document.querySelectorAll('.cut-card__detail-btn').forEach(btn => {
+  // === MODAL TRIGGERS (department details + lawn sign) ===
+  document.querySelectorAll('[data-modal]').forEach(btn => {
     btn.addEventListener('click', () => {
       const modal = document.getElementById(btn.dataset.modal);
       if (modal) modal.showModal();

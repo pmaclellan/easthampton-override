@@ -616,6 +616,17 @@ body {
   text-decoration: underline;
 }
 
+.lawn-sign-modal__body {
+  text-align: center;
+  padding: 2rem 1.5rem 1.75rem;
+}
+.lawn-sign-modal__soon {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--color-green-forest);
+  margin-bottom: 0.625rem !important;
+}
+
 
 /* ===== TAX IMPACT ===== */
 #tax {

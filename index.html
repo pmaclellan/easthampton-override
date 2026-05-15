@@ -69,7 +69,7 @@
         </p>
         <div class="hero__ctas">
           <a href="#ballot" class="btn btn--amber">Understand the Ballot ↓</a>
-          <a href="#involved" class="btn btn--outline">Get a Lawn Sign →</a>
+          <button class="btn btn--outline" data-modal="modal-lawn-sign">Get a Lawn Sign →</button>
         </div>
       </div>
 
@@ -755,19 +755,15 @@
           <div class="involved-card">
             <div class="involved-card__icon" aria-hidden="true">🪧</div>
             <h3>Get a Lawn Sign</h3>
-            <p>Show your neighbors where you stand. Email us to request a sign for your yard.</p>
-            <!-- UPDATE: replace email or link to a form -->
-            <a href="mailto:voteyesforeasthampton@gmail.com?subject=Lawn%20Sign%20Request"
-               class="btn btn--amber">Request a Sign</a>
+            <p>Show your neighbors where you stand. Request a sign for your yard.</p>
+            <button class="btn btn--amber" data-modal="modal-lawn-sign">Request a Sign</button>
           </div>
 
           <div class="involved-card">
             <div class="involved-card__icon" aria-hidden="true">🤝</div>
             <h3>Volunteer</h3>
             <p>Help with door-knocking, phone banking, or staffing the polls on June 9.</p>
-            <!-- UPDATE: replace email or link to a signup form -->
-            <a href="mailto:voteyesforeasthampton@gmail.com?subject=Volunteer%20Signup"
-               class="btn btn--amber">Sign Up to Help</a>
+            <a href="https://forms.gle/dcDhYHs4Vrb64S8Z6" class="btn btn--amber" target="_blank" rel="noopener">Sign Up to Help</a>
           </div>
 
           <div class="involved-card">
@@ -801,8 +797,6 @@
 
       <div class="footer-brand">
         <p class="footer-logo">Vote Yes for Easthampton</p>
-        <!-- UPDATE: update contact email -->
-        <a href="mailto:voteyesforeasthampton@gmail.com">voteyesforeasthampton@gmail.com</a>
       </div>
 
       <nav class="footer-nav" aria-label="Footer navigation">
@@ -825,6 +819,21 @@
 
     </div>
   </footer>
+
+  <!-- ===== LAWN SIGN COMING SOON MODAL ===== -->
+  <dialog id="modal-lawn-sign" class="dept-modal lawn-sign-modal" aria-label="Lawn Sign — Coming Soon">
+    <div class="dept-modal__inner">
+      <div class="dept-modal__header">
+        <h2>🪧 Get a Lawn Sign</h2>
+        <button class="dept-modal__close" aria-label="Close">✕</button>
+      </div>
+      <div class="dept-modal__body lawn-sign-modal__body">
+        <p class="lawn-sign-modal__soon">Coming Soon!</p>
+        <p>Lawn sign distribution details will be posted here shortly. In the meantime, sign up to volunteer and we'll reach out with more information.</p>
+        <a href="https://forms.gle/dcDhYHs4Vrb64S8Z6" class="btn btn--amber" target="_blank" rel="noopener">Sign Up to Help</a>
+      </div>
+    </div>
+  </dialog>
 
   <!-- ===== DEPARTMENT DETAIL MODALS ===== -->
 
