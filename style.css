@@ -500,6 +500,121 @@ body {
 .cuts-total__label  { color: var(--color-cream); font-size: 1.05rem; font-weight: 600; }
 .cuts-total__amount { color: var(--color-amber); font-size: 2rem; font-weight: 900; }
 
+.cut-card__detail-btn {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.28);
+  color: rgba(245,240,213,0.75);
+  font-size: 0.78rem;
+  font-family: inherit;
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-top: 0.875rem;
+  display: inline-block;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.cut-card__detail-btn:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.55);
+  color: var(--color-cream);
+}
+
+/* ===== DEPARTMENT DETAIL MODALS ===== */
+.dept-modal {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0;
+  width: min(720px, 92vw);
+  max-height: 86vh;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.45);
+}
+.dept-modal::backdrop {
+  background: rgba(0,0,0,0.6);
+}
+.dept-modal__inner {
+  display: flex;
+  flex-direction: column;
+  max-height: 86vh;
+}
+.dept-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--color-green-forest);
+  padding: 1.25rem 1.5rem 0.75rem;
+  flex-shrink: 0;
+}
+.dept-modal__header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--color-gold);
+  font-weight: 800;
+}
+.dept-modal__close {
+  background: none;
+  border: none;
+  color: rgba(245,240,213,0.7);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  border-radius: 4px;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+.dept-modal__close:hover {
+  color: var(--color-cream);
+  background: rgba(255,255,255,0.1);
+}
+.dept-modal__byline {
+  background: var(--color-green-forest);
+  color: rgba(245,240,213,0.6);
+  font-size: 0.77rem;
+  font-style: italic;
+  padding: 0 1.5rem 1rem;
+  flex-shrink: 0;
+}
+.dept-modal__body {
+  padding: 1.375rem 1.5rem 1rem;
+  overflow-y: auto;
+  flex: 1;
+  background: var(--color-cream);
+  color: var(--color-text-dark);
+}
+.dept-modal__body p {
+  margin-bottom: 0.875rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+.dept-modal__body p strong {
+  font-size: 0.875rem;
+}
+.dept-modal__body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+.dept-modal__body ul li {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.18rem 0;
+  color: var(--color-text-dark);
+}
+.dept-modal__footer {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-cream);
+  border-top: 1px solid rgba(27,94,32,0.12);
+  font-size: 0.77rem;
+  color: rgba(26,58,26,0.65);
+  flex-shrink: 0;
+}
+.dept-modal__footer a {
+  color: var(--color-green-forest);
+  text-decoration: underline;
+}
+
 
 /* ===== TAX IMPACT ===== */
 #tax {
