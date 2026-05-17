@@ -839,6 +839,47 @@ body {
 }
 
 
+/* ===== WHAT A YES VOTE PROTECTS ===== */
+#yes-protects {
+  background: var(--color-green-forest);
+  padding: var(--space-lg) 0;
+}
+
+.protects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin-top: var(--space-md);
+}
+
+@media (min-width: 680px) {
+  .protects-grid { grid-template-columns: 1fr 1fr; }
+  .protects-item--full { grid-column: 1 / -1; }
+}
+
+.protects-item {
+  border-top: 2px solid rgba(255, 214, 0, 0.35);
+  padding-top: 1.25rem;
+}
+
+.protects-item__title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  margin: 0 0 0.6rem;
+  line-height: 1.3;
+}
+
+.protects-item p {
+  margin: 0;
+  color: var(--color-cream);
+  opacity: 0.88;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.hills-divider--white { background: var(--color-white); }
+
 /* ===== FAQ ===== */
 #faq {
   background: var(--color-cream);
