@@ -410,6 +410,11 @@ body {
   opacity: 0.75;
 }
 
+.events-rsvp {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 /* ===== BALLOT ===== */
 .ballot-cards {
   display: grid;
