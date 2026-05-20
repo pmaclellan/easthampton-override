@@ -586,15 +586,21 @@
     <!-- ===== NEIGHBOR IN NEED ===== -->
     <section id="neighbor-in-need" aria-label="Neighbor in Need Program">
       <div class="container">
-        <div class="nin-proposed-banner">
-          &#9888; Proposed — Awaiting City Council Approval
-        </div>
-        <h2 class="section-heading">The Neighbor in Need Program</h2>
-        <p class="section-intro">
-          Mayor Derby has proposed a community-funded safety net to protect Easthampton's most vulnerable residents
-          from losing their homes due to property tax burdens — funded entirely by voluntary donations and a voluntary
-          tax bill checkoff. No cost to the city budget, no impact on local tax rates.
-        </p>
+        <details class="nin-details">
+          <summary class="nin-summary">
+            Worried you could lose your home if taxes go up? Click here to learn more about the proposed Neighbor in Need program.
+            <span class="nin-summary__icon" aria-hidden="true">&#9660;</span>
+          </summary>
+          <div class="nin-content">
+            <h2 class="section-heading">The Neighbor in Need Program</h2>
+            <div class="nin-proposed-banner">
+              &#9888; Proposed — Awaiting City Council Approval
+            </div>
+            <p class="section-intro">
+              Mayor Derby has proposed a community-funded safety net to protect Easthampton's most vulnerable residents
+              from losing their homes due to property tax burdens — funded entirely by voluntary donations and a voluntary
+              tax bill checkoff. No cost to the city budget, no impact on local tax rates.
+            </p>
 
         <div class="nin-features">
           <div class="nin-feature">
@@ -676,6 +682,8 @@
           </div>
         </div>
 
+          </div><!-- /.nin-content -->
+        </details>
       </div>
     </section>
 
