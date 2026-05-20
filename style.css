@@ -704,7 +704,7 @@ body {
 /* ===== TAX IMPACT ===== */
 #tax {
   background: var(--color-cream);
-  padding: var(--space-lg) 0;
+  padding: var(--space-lg) 0 var(--space-sm);
 }
 
 .tax-callout {
@@ -1151,7 +1151,51 @@ footer {
 /* ===== NEIGHBOR IN NEED ===== */
 #neighbor-in-need {
   background: var(--color-cream);
-  padding: var(--space-lg) 0;
+  padding: var(--space-sm) 0 var(--space-lg);
+}
+
+.nin-details {
+  border: 1.5px solid rgba(0,0,0,0.12);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.nin-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-green-forest);
+  cursor: pointer;
+  list-style: none;
+  background: var(--color-white);
+  transition: background 0.15s;
+  line-height: 1.5;
+}
+.nin-summary::-webkit-details-marker { display: none; }
+.nin-summary::marker { display: none; }
+.nin-summary:hover { background: #f0efe8; }
+
+.nin-summary__icon {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  color: var(--color-amber);
+  transition: transform 0.2s;
+}
+.nin-details[open] .nin-summary__icon {
+  transform: rotate(180deg);
+}
+
+.nin-content {
+  padding: var(--space-md) var(--space-sm) var(--space-sm);
+  border-top: 1.5px solid rgba(0,0,0,0.08);
+}
+
+.nin-content .section-heading {
+  margin-bottom: 0.75rem;
 }
 
 .nin-proposed-banner {
@@ -1167,7 +1211,7 @@ footer {
   text-align: center;
   padding: 0.65rem 1.25rem;
   border-radius: var(--radius);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   letter-spacing: 0.02em;
 }
 
@@ -1227,6 +1271,19 @@ footer {
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.nin-path__list {
+  flex: 1;
+  list-style: none;
+  padding: 1rem 1.25rem;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
 }
 
 .nin-path__header {
@@ -1275,16 +1332,6 @@ footer {
   margin: 0;
 }
 
-.nin-path__list {
-  list-style: none;
-  padding: 1rem 1.25rem;
-  background: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin: 0;
-}
-
 .nin-path__list li {
   font-size: 0.9rem;
   padding-left: 1.4rem;
@@ -1314,6 +1361,9 @@ footer {
   flex-direction: column;
   max-width: 620px;
   margin: 0 auto;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
 }
 
 .nin-step {
