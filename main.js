@@ -155,11 +155,9 @@
   const ninDetails = document.querySelector('.nin-details');
   if (ninDetails) {
     const openNin = () => { ninDetails.open = true; };
-
     document.querySelectorAll('a[href="#neighbor-in-need"]').forEach(link => {
       link.addEventListener('click', openNin);
     });
-
     if (window.location.hash === '#neighbor-in-need') openNin();
   }
 
