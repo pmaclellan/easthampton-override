@@ -415,6 +415,13 @@ body {
   margin-top: 2rem;
 }
 
+.events-sign-note {
+  text-align: center;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted, #555);
+}
+
 /* ===== BALLOT ===== */
 .ballot-cards {
   display: grid;
@@ -972,8 +979,7 @@ body {
   gap: var(--space-sm);
   margin-top: var(--space-md);
 }
-@media (min-width: 600px) { .involved-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 900px) { .involved-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 500px) { .involved-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); } }
 
 .involved-card {
   background: rgba(255,255,255,0.1);
@@ -999,6 +1005,11 @@ body {
   line-height: 1.5;
   flex: 1;
 }
+.involved-card .btn {
+  white-space: normal;
+  max-width: 100%;
+}
+
 .involved-card__socials {
   display: flex;
   gap: 0.4rem;
