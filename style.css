@@ -350,16 +350,18 @@ body {
 }
 
 .endorsement-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-md);
   margin-top: var(--space-md);
-  max-width: 900px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .endorsement-card {
+  flex: 0 1 280px;
   background: rgba(255,255,255,0.07);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: var(--radius);
@@ -369,6 +371,23 @@ body {
   align-items: center;
   gap: 0.75rem;
   text-align: center;
+}
+
+.endorsement-card__logo--text {
+  background: white;
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: var(--color-green-forest);
+  letter-spacing: 0.03em;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 180px;
 }
 
 .endorsement-card__logo {
