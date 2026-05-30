@@ -417,7 +417,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-md);
-  margin-top: var(--space-md);
+  margin-top: var(--space-lg);
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -501,6 +501,92 @@ body {
   transition: opacity 0.15s;
 }
 .endorsement-card__link:hover { opacity: 0.75; }
+
+/* ===== LABOR COALITION BLOCK ===== */
+.labor-coalition {
+  margin-top: var(--space-md);
+  padding: 2.5rem 2.5rem;
+  background: rgba(0,0,0,0.25);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-top: 3px solid var(--color-gold);
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.labor-coalition__label {
+  display: inline-block;
+  background: var(--color-gold);
+  color: #1a2e1a;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
+  margin-bottom: 1.75rem;
+}
+
+.labor-coalition__quote {
+  font-style: italic;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: var(--color-cream);
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  opacity: 0.95;
+}
+
+.labor-coalition__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.labor-coalition__logo {
+  background: white;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.labor-coalition__logo img {
+  max-height: 52px;
+  max-width: 110px;
+  width: auto;
+  object-fit: contain;
+}
+
+.labor-coalition__orgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 0;
+  padding: 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.5rem;
+}
+
+.labor-coalition__orgs li {
+  font-size: 0.8rem;
+  color: var(--color-cream);
+  opacity: 0.65;
+  font-weight: 500;
+  width: 100%;
+}
+
+.labor-coalition__orgs li::before {
+  content: '· ';
+  color: var(--color-gold);
+  opacity: 1;
+}
 
 /* ===== THE BALLOT ===== */
 #ballot {
