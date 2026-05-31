@@ -52,6 +52,10 @@ body {
 
 @media (max-width: 600px) {
   .container { padding: 0 var(--space-sm); }
+  .hero__content {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
 }
 
 .section-heading {
@@ -241,7 +245,7 @@ body {
 }
 
 .hero__title {
-  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-size: clamp(2.25rem, 9vw, 6.5rem);
   font-weight: 900;
   line-height: 1.0;
   color: var(--color-gold);
