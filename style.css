@@ -342,6 +342,64 @@ body {
 }
 .date-card__note a { color: var(--color-green-mid); text-decoration: underline; }
 
+/* Expired / past-deadline date card */
+.date-card--expired {
+  background: #f0f0ef;
+  border: 1px solid #d8d8d6;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+}
+.date-card--expired::before {
+  content: 'DEADLINE PASSED';
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  width: 150px;
+  background: #b71c1c;
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  padding: 5px 0;
+  text-align: center;
+  transform: rotate(35deg);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.date-card--expired .date-card__date  { color: #b0b0aa; }
+.date-card--expired .date-card__label { color: #888; }
+.date-card--expired .date-card__note  { color: #aaa; }
+
+/* Voter registration status banner */
+.reg-status-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  background: var(--color-green-forest);
+  color: var(--color-cream);
+  padding: 0.875rem 1.75rem;
+  border-radius: var(--radius);
+  margin: var(--space-md) 0 0.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.reg-status-banner__text {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.reg-status-banner__link {
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--color-gold);
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+.reg-status-banner__link:hover { opacity: 0.8; }
+
 
 /* ===== ENDORSEMENTS ===== */
 #endorsements {
