@@ -1855,6 +1855,16 @@ footer {
   padding: 2.25rem 2.75rem;
 }
 
+.spotlight-promo__eyebrow {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+}
+
 .spotlight-promo__text .section-heading {
   color: var(--color-gold);
   margin-bottom: 0.5rem;
