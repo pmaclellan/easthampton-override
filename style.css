@@ -588,6 +588,23 @@ body {
   opacity: 1;
 }
 
+.labor-coalition__statement-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212,175,55,0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.labor-coalition__statement-link:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
 /* ===== THE BALLOT ===== */
 #ballot {
   background: var(--color-cream);
